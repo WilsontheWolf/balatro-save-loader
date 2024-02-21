@@ -1,0 +1,19 @@
+{
+  "name": "balatro-save-loader",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "WilsontheWolf (https://shorty.systems/)",
+  "license": "MPL-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config",
+    "static": "npm run build && ./make-static.sh"
+  },
+  "dependencies": {
+    "pako": "^2.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.6"
+  }
+}
