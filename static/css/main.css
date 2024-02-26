@@ -20,3 +20,7 @@ img {
 pre {
     overflow-y: auto;
 }
+
+:invalid {
+    border: 2px solid red;
+}

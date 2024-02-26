@@ -5,4 +5,4 @@ mkdir ./dist
 
 cp -r ./static/* ./dist/
 
-cp ./bundle.js ./dist/balatro-save-loader.js
+cp ./bundle.js ./dist/js/balatro-save-loader.js
