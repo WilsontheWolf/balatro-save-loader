@@ -1,6 +1,22 @@
+import { calculatorTab } from "./calculatorCompat/calculatorExport.js";
 import { makeValuesTab, rawTab } from "./sharedTabs.js";
 
 const values = [
+    {
+        name: 'Round',
+        path: 'GAME.round',
+        type: 'number',
+    },
+    {
+        name: 'Ante',
+        path: 'GAME.round_resets.ante',
+        type: 'number',
+    },
+    {
+        name: 'Win Ante',
+        path: 'GAME.win_ante',
+        type: 'number',
+    },
     {
         name: 'Money',
         path: 'GAME.dollars',
@@ -55,6 +71,7 @@ const values = [
 
 const saveTabs = [
     makeValuesTab(values),
+    calculatorTab,
     rawTab,
 ];
 

@@ -45,11 +45,12 @@ function readFile() {
         const arrayBuffer = e.target?.result;
         if (arrayBuffer instanceof ArrayBuffer) {
             try {
-                data = processFile(arrayBuffer);
+                window.debugData =
+                    data = processFile(arrayBuffer);
                 handleKnownArrays(data);
                 filename = file?.files?.[0]?.name || filename;
                 const type = guessFileType(data, filename);
-                let tabs =  unknownTabs;
+                let tabs = unknownTabs;
                 switch (type) {
                     case 'save':
                         tabs = saveTabs;
