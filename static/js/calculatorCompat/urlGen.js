@@ -435,7 +435,7 @@ function compileHand(data) {
 
     for (let i = 0; i < hands.length; i++) {
         // played this round? - 1 bit
-        binary.push(hands[i].played_this_round ? 0 : 1);
+        binary.push(hands[i].played_this_round ? 1 : 0);
 
         // is non-zero? - 1 bit
         binary.push(hands[i].played ? 1 : 0);
