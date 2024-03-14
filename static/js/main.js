@@ -34,6 +34,8 @@ function initUI() {
         a.click();
     });
 
+    setCanClose(false);
+
     if (file?.files?.length) {
         readFile();
     }
